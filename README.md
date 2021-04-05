@@ -5,8 +5,9 @@ A JavaFX Application demonstrating how to implement a simplistic approach of a r
 * [Maven](https://maven.apache.org/) / [Gradle](https://gradle.org/) (as build tools)
 * [Nitrite Java](https://www.dizitart.org/nitrite-database.html) (as Database)
 
-#**Helpful commands**
+#Helpful commands
 To install all the required dependencies: mvn clean install
+
 To start and run the project: mvn javafx:run
 
 ## Resources
