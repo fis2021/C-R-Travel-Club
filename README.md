@@ -6,6 +6,7 @@ A JavaFX Application demonstrating how to implement a simplistic approach of a r
 * [Nitrite Java](https://www.dizitart.org/nitrite-database.html) (as Database)
 
 #Helpful commands
+
 To install all the required dependencies: mvn clean install
 
 To start and run the project: mvn javafx:run
