@@ -1,7 +1,9 @@
 # IntelliJ IDEA
 *.iml
 target
-.idea
+build
+.ideagi
+
 
 # Maven
 target/
