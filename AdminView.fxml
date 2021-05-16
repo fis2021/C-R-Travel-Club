@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.0" prefWidth="1033.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.loose.fis.sre.controllers.AdminController">
+    <children>
+        <Label layoutX="410.0" layoutY="14.0" text="Welcome to Hotel Panel">
+            <font>
+                <Font name="Caveat Regular" size="27.0" />
+            </font>
+        </Label>
+        <Button fx:id="createRoom" layoutX="54.0" layoutY="475.0" mnemonicParsing="false" onAction="#CreateRooms" text="Create" />
+        <Button fx:id="updateReservation" layoutX="408.0" layoutY="480.0" mnemonicParsing="false" onAction="#Reservation" text="Update" />
+        <Button fx:id="refreshBookings" layoutX="822.0" layoutY="469.0" mnemonicParsing="false" onAction="#UpdateCurrentBookings" text="Refresh List" />
+        <TextField fx:id="roomNumbers" layoutX="28.0" layoutY="282.0" promptText="Number of Rooms" />
+        <TextField fx:id="roomPrice" layoutX="28.0" layoutY="327.0" promptText="Price" />
+        <TextField fx:id="roomType" layoutX="28.0" layoutY="235.0" promptText="Room Type" />
+        <TableView fx:id="manageReservation" layoutX="206.0" layoutY="240.0" prefHeight="200.0" prefWidth="460.0">
+            <columns>
+                <TableColumn fx:id="mrCustomerName" prefWidth="106.0" text="Customer Name" />
+                <TableColumn fx:id="mrNoOfRoom" prefWidth="87.0" text="No. Of Rooms" />
+                <TableColumn fx:id="mrNoOfPeople" prefWidth="87.0" text="No. People" />
+                <TableColumn fx:id="mrNoOfDays" prefWidth="87.0" text="No. Days" />
+                <TableColumn fx:id="mrBookDays" prefWidth="87.0" text="Booking Date" />
+            </columns>
+        </TableView>
+        <TableView fx:id="currentBookings" layoutX="695.0" layoutY="229.0" prefHeight="200.0" prefWidth="324.0">
+            <columns>
+                <TableColumn fx:id="cbCustomerName" prefWidth="101.0" text="Customer Name" />
+                <TableColumn fx:id="cbRooms" prefWidth="65.0" text="Rooms" />
+                <TableColumn fx:id="cbNoPeople" prefWidth="76.0" text="No. People" />
+                <TableColumn fx:id="cbTotalDays" prefWidth="81.0" text="Total Days" />
+            </columns>
+        </TableView>
+        <Label layoutX="806.0" layoutY="191.0" text="Current Booking">
+            <font>
+                <Font name="Caveat Regular" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="385.0" layoutY="202.0" text="Manage Resertvation">
+            <font>
+                <Font name="Caveat Regular" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="197.0" text="Room Details">
+            <font>
+                <Font name="Caveat Regular" size="22.0" />
+            </font>
+        </Label>
+        <Line endX="5.29290771484375" endY="400.0" layoutX="189.0" layoutY="126.0" startX="5.29290771484375" startY="37.29290771484375" />
+        <Line endX="5.29290771484375" endY="388.29290771484375" layoutX="673.0" layoutY="133.0" startX="5.29290771484375" startY="30.0" />
+        <TextArea fx:id="roomDesc" layoutX="19.0" layoutY="381.0" prefHeight="82.0" prefWidth="161.0" promptText="Description" />
+        <TextField fx:id="hotelName" layoutX="251.0" layoutY="75.0" promptText="Hotel Name" />
+        <TextField fx:id="contactNo" layoutX="415.0" layoutY="75.0" promptText="Contact No" />
+        <TextField fx:id="adress" layoutX="586.0" layoutY="77.0" promptText="Address" />
+        <Button fx:id="updateHotel" layoutX="765.0" layoutY="75.0" mnemonicParsing="false" onAction="#HotelDetails" text="Update" />
+        <Button fx:id="logout" layoutX="901.0" layoutY="20.0" mnemonicParsing="false" onAction="#LogOut" text="Logout" />
+    </children>
+</AnchorPane>
