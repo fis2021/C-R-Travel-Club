@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="445.0" prefWidth="419.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.loose.fis.sre.controllers.HomeController">
+    <children>
+        <Button fx:id="login" layoutX="48.0" layoutY="315.0" mnemonicParsing="false" onAction="#LoginPanel" prefHeight="25.0" prefWidth="139.0" text="Login" />
+        <Button fx:id="register" layoutX="236.0" layoutY="315.0" mnemonicParsing="false" onAction="#RegisterPanel" prefHeight="25.0" prefWidth="139.0" text="Register" />
+        <Button fx:id="exit" layoutX="189.0" layoutY="399.0" mnemonicParsing="false" onAction="#exitProject" prefHeight="25.0" prefWidth="51.0" text="Exit" />
+        <Label layoutX="114.0" layoutY="20.0" prefHeight="51.0" prefWidth="200.0" text="Welcome To Hotel Reservation">
+            <font>
+                <Font name="Caveat Bold" size="19.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="174.0" fitWidth="190.0" layoutX="33.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@image/programmer.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="174.0" fitWidth="174.0" layoutX="223.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@image/man.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
+
