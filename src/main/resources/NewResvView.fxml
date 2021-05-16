@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="423.0" prefWidth="331.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.loose.fis.sre.controllers.NewReservController">
+    <children>
+        <Button fx:id="resvButton" layoutX="137.0" layoutY="347.0" mnemonicParsing="false" onAction="#Reserve" text="Reserve" />
+        <TextField fx:id="noOfRooms" layoutX="140.0" layoutY="126.0" />
+        <TextField fx:id="noOFPeoples" layoutX="140.0" layoutY="203.0" />
+        <TextField fx:id="totalDays" layoutX="140.0" layoutY="237.0" />
+        <TextField fx:id="userFullName" layoutX="140.0" layoutY="304.0" />
+        <Label layoutX="41.0" layoutY="95.0" text="Select Hotel" />
+        <Label layoutX="41.0" layoutY="130.0" text="No. Of Rooms:" />
+        <Label layoutX="41.0" layoutY="164.0" text="Room Type:" />
+        <Label layoutX="41.0" layoutY="207.0" text="No. Of People:" />
+        <Label layoutX="41.0" layoutY="242.0" text="Total Days:" />
+        <Label layoutX="41.0" layoutY="276.0" text="Date:" />
+        <ComboBox fx:id="selectHotel" layoutX="140.0" layoutY="91.0" onAction="#Hotel" prefWidth="150.0" promptText="Available Hotels" />
+        <Label layoutX="85.0" layoutY="32.0" text="New Reservation">
+            <font>
+                <Font name="Caveat Bold" size="19.0" />
+            </font>
+        </Label>
+        <DatePicker fx:id="Date" layoutX="140.0" layoutY="272.0" prefHeight="25.0" prefWidth="149.0" />
+        <Label layoutX="41.0" layoutY="308.0" text="Full Name:" />
+        <ComboBox fx:id="roomType" layoutX="140.0" layoutY="160.0" onAction="#SelectRoom" prefWidth="150.0" promptText="Select Room Type" />
+        <Button fx:id="goBack" layoutX="137.0" layoutY="384.0" mnemonicParsing="false" onAction="#Back" text="Go Back" />
+    </children>
+</AnchorPane>
+
